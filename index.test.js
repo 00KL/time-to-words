@@ -45,4 +45,16 @@ describe("Time to words", () => {
     const timeInWords = convertTimeToWords("2:45");
     expect(timeInWords).toBe("quarter to three");
   });
+
+  it("Throws error for invalid time format", () => {
+    expect(() => {
+      convertTimeToWords("2-30");
+    }).toThrow("Invalid time format");
+  });
+
+  it("Throws error for impossible hour", () => {
+    expect(() => {
+      convertTimeToWords("13:00");
+    }).toThrow("Invalid time value");
+  });
 });
