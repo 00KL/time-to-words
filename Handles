@@ -1,0 +1,5 @@
+
+> time-in-words@1.0.0 test /Users/lucas/work/pessoal/interview/time-to-words
+> jest index.test.ts -t Time to words midnight
+
+ ELIFECYCLE  Test failed. See above for more details.
